@@ -1,17 +1,22 @@
 @font-face {
     font-family: "Doran";
-    src: url("assets/fonts/Doran.ttf") format("truetype");
-    font-weight: normal;
+    src: url("assets/fonts/Doran-VF.ttf") format("truetype");
+    font-weight: 100 900;
     font-style: normal;
 }
 
 
-/* تنظیمات کلی */
+/* =====================
+   تنظیمات کلی
+===================== */
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
 
@@ -28,10 +33,17 @@ body {
 }
 
 
-
 /* =====================
    هیرو
 ===================== */
+
+.hero {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
 
 
 .hero img {
@@ -50,7 +62,6 @@ body {
    فعالیت ها
 ===================== */
 
-
 .activities {
 
     display: flex;
@@ -61,10 +72,11 @@ body {
 
     gap: 25px;
 
-    padding: 45px 40px;
+    padding: 50px 40px;
+
+    background: #fafafa;
 
 }
-
 
 
 
@@ -78,10 +90,9 @@ body {
 
     text-align: center;
 
-    transition: 0.3s;
+    transition: all 0.3s ease;
 
 }
-
 
 
 
@@ -89,27 +100,31 @@ body {
 
     width: 100%;
 
-    height: 300px;
+    height: 320px;
 
     object-fit: cover;
 
     display: block;
 
-    border-radius: 22px;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
 
 }
-
 
 
 
 .activity-card h2 {
 
-    font-size: 26px;
+    font-size: 28px;
 
-    margin: 20px 0 10px;
+    margin: 22px 0 12px;
+
+    color: #111;
 
 }
-
 
 
 
@@ -119,16 +134,25 @@ body {
 
     line-height: 2;
 
+    color: #555;
+
     margin: 0;
 
 }
 
 
 
-
 .activity-card:hover {
 
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+
+}
+
+
+
+.activity-card:hover img {
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 
 }
 
@@ -147,21 +171,21 @@ body {
 
     text-align: center;
 
-    padding: 60px 20px;
+    padding: 65px 20px;
 
 }
-
 
 
 
 .social h2 {
 
-    margin: 0 0 45px;
+    margin: 0 0 50px;
 
-    font-size: 30px;
+    font-size: 32px;
+
+    font-weight: 700;
 
 }
-
 
 
 
@@ -173,10 +197,9 @@ body {
 
     align-items: center;
 
-    gap: 80px;
+    gap: 90px;
 
 }
-
 
 
 
@@ -186,7 +209,7 @@ body {
 
     color: #d4af37;
 
-    font-size: 22px;
+    font-size: 23px;
 
     transition: 0.3s;
 
@@ -194,21 +217,19 @@ body {
 
 
 
-
 .social-link img {
 
-    width: 65px;
+    width: 70px;
 
-    height: 65px;
+    height: 70px;
 
     object-fit: contain;
 
     display: block;
 
-    margin: 0 auto 15px;
+    margin: 0 auto 18px;
 
 }
-
 
 
 
@@ -220,10 +241,30 @@ body {
 
 
 
-
 .social-link:hover {
 
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+
+}
+
+
+
+/* =====================
+   فوتر
+===================== */
+
+
+footer {
+
+    background: #050505;
+
+    color: #d4af37;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 15px;
 
 }
 
@@ -234,17 +275,18 @@ body {
 ===================== */
 
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
 
     .activities {
 
         flex-direction: column;
 
-        padding: 25px 20px;
+        padding: 30px 20px;
+
+        gap: 35px;
 
     }
-
 
 
     .activity-card {
@@ -254,38 +296,42 @@ body {
     }
 
 
-
     .activity-card img {
 
-        height: 250px;
+        height: 260px;
 
     }
 
+
+    .activity-card h2 {
+
+        font-size: 24px;
+
+    }
 
 
     .social-items {
 
-        gap: 35px;
+        gap: 30px;
+
+        flex-wrap: wrap;
 
     }
-
 
 
     .social-link img {
 
-        width: 50px;
+        width: 55px;
 
-        height: 50px;
+        height: 55px;
 
     }
-
 
 
     .social h2 {
 
-        font-size: 23px;
+        font-size: 25px;
 
     }
-
 
 }
