@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "Doran";
+    src: url("assets/fonts/Doran.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* تنظیمات کلی */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: "Doran", Tahoma, sans-serif;
+
+    direction: rtl;
+
+    background: #ffffff;
+
+    color: #222;
+
+}
+
+
+
+/* =====================
+   هیرو
+===================== */
+
+
+.hero img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+/* =====================
+   فعالیت ها
+===================== */
+
+
+.activities {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    padding: 45px 40px;
+
+}
+
+
+
+
+.activity-card {
+
+    width: 33.33%;
+
+    text-decoration: none;
+
+    color: #222;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+}
+
+
+
+
+.activity-card img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 22px;
+
+}
+
+
+
+
+.activity-card h2 {
+
+    font-size: 26px;
+
+    margin: 20px 0 10px;
+
+}
+
+
+
+
+.activity-card p {
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin: 0;
+
+}
+
+
+
+
+.activity-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+/* =====================
+   شبکه های اجتماعی
+===================== */
+
+
+.social {
+
+    background: #111111;
+
+    color: #d4af37;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+}
+
+
+
+
+.social h2 {
+
+    margin: 0 0 45px;
+
+    font-size: 30px;
+
+}
+
+
+
+
+.social-items {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+
+
+.social-link {
+
+    text-decoration: none;
+
+    color: #d4af37;
+
+    font-size: 22px;
+
+    transition: 0.3s;
+
+}
+
+
+
+
+.social-link img {
+
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 15px;
+
+}
+
+
+
+
+.social-link span {
+
+    display: block;
+
+}
+
+
+
+
+.social-link:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+/* =====================
+   موبایل
+===================== */
+
+
+@media (max-width: 768px) {
+
+
+    .activities {
+
+        flex-direction: column;
+
+        padding: 25px 20px;
+
+    }
+
+
+
+    .activity-card {
+
+        width: 100%;
+
+    }
+
+
+
+    .activity-card img {
+
+        height: 250px;
+
+    }
+
+
+
+    .social-items {
+
+        gap: 35px;
+
+    }
+
+
+
+    .social-link img {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+
+
+    .social h2 {
+
+        font-size: 23px;
+
+    }
+
+
+}
